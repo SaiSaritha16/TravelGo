@@ -7,7 +7,7 @@ from decimal import Decimal
 import uuid
 import random
 
-app = Flask(__name__)
+app = Flask(_name_)
 app.secret_key = 'your_secret_key_here' # IMPORTANT: Change this to a strong, random key in production!
 
 # AWS Setup using IAM Role
@@ -515,6 +515,6 @@ def cancel_booking():
     return redirect(url_for('dashboard'))
 
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     # IMPORTANT: In a production environment, disable debug mode and specify a production-ready host.
     app.run(debug=True, host='0.0.0.0')
